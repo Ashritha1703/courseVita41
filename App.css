@@ -1,0 +1,57 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4ff; /* Soft blue background for contrast */
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2c3e50; /* Darker blue for the title */
+}
+
+.toolbar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.control-button {
+  margin-right: 10px;
+  padding: 10px 15px; /* Added padding for better button size */
+  border: 1px solid #3498db; /* Border color - light blue */
+  border-radius: 5px;
+  background-color: white; /* Button background */
+  color: #3498db; /* Text color - light blue */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.control-button:hover {
+  background-color: #3498db; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}
+
+.control-button.active {
+  background-color: #2980b9; /* Active button color - darker blue */
+  color: white; /* Active text color */
+}
+
+.editor {
+  width: 100%;
+  max-width: 800px; /* Limit width for better readability */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add slight shadow */
+  background-color: #ffffff; /* White background for the text area */
+}
+
+.editor:focus {
+  outline: none;
+  border-color: #3498db; /* Blue border on focus */
+}
